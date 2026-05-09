@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OK Button</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button id="okButton">OK</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+// script.js
+document.getElementById("okButton").addEventListener("click", function () {
+  window.location.href = "https://www.youtube.com";
+});
+/* style.css */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+#okButton {
+  padding: 20px 40px;
+  font-size: 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #ff0000;
+  color: white;
+  transition: 0.2s;
+}
+
+#okButton:hover {
+  transform: scale(1.05);
+}
